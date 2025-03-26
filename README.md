@@ -3,91 +3,55 @@
 ```markdown
 # Summer Project
 
-![Project Banner](https://via.placeholder.com/1200x400?text=Summer+Project) <!-- Replace with actual banner if available -->
-
-A lightweight and versatile project designed to bring the warmth and simplicity of summer to your development workflow.
+Welcome to the **Summer** repository by diep376! This project is a lightweight, seasonal-themed application designed to bring a touch of summer to your development workflow.
 
 ## Features
 
-- ☀️ Lightweight and easy to integrate
-- 🌊 Clean, modern codebase
-- 🌴 Flexible configuration options
-- 🌞 Optimized for performance
-- 🏖️ Comprehensive documentation
+- **Seasonal Greetings**: Display warm summer-themed messages.
+- **Weather Simulation**: Simulate sunny weather conditions (optional).
+- **Lightweight & Fast**: Minimal dependencies for quick setup.
+- **Customizable**: Easily tweak themes and settings.
 
 ## Installation
 
-To install the Summer project, simply clone the repository:
+To get started, clone the repository and install the required dependencies:
 
 ```bash
 git clone https://github.com/diep376/summer.git
 cd summer
-```
-
-For Node.js projects, install dependencies:
-
-```bash
-npm install
+npm install  # or 'yarn install' if using Yarn
 ```
 
 ## Usage
 
-Basic usage example:
+Run the application with the following command:
 
-```javascript
-import summer from 'summer';
-
-// Initialize with default settings
-const app = summer();
-
-// Start the application
-app.run();
+```bash
+npm start
 ```
 
-Configuration options can be passed during initialization:
+For development mode with hot-reloading:
 
-```javascript
-const app = summer({
-  theme: 'light',
-  debug: true,
-  features: ['analytics', 'notifications']
-});
+```bash
+npm run dev
 ```
 
 ## Configuration
 
-Summer can be configured via `summer.config.js`:
+Modify the `config.json` file to adjust settings:
 
-```javascript
-module.exports = {
-  // Core settings
-  port: 3000,
-  environment: 'development',
-  
-  // Feature flags
-  features: {
-    caching: true,
-    compression: false
-  }
-};
+```json
+{
+  "theme": "sunny",
+  "greeting": "Welcome to Summer!"
+}
 ```
 
 ## Contributing
 
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Diep Nguyen - [@diep376](https://github.com/diep376)  
-Project Link: [https://github.com/diep376/summer](https://github.com/diep376/summer)
+This project is open-source and available under the [MIT License](LICENSE).
 ```
